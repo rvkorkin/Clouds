@@ -3,7 +3,7 @@ RUN apt-get update && apt-get -y update
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 RUN pip3 -q install pip --upgrade
 
-RUN pip3 -q install bs4 \
+RUN pip3 -q install beautifulsoup4 \
    numpy \
    matplotlib \
    seaborn \
@@ -13,7 +13,6 @@ RUN pip3 -q install bs4 \
 
 RUN mkdir src
 WORKDIR src/
-#COPY HW1_RK.ipynb WORKDIR
 COPY . /src
 
 
