@@ -3,12 +3,12 @@ RUN apt-get update && apt-get -y update
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 RUN pip3 -q install pip --upgrade
 
-RUN pip3 -q install beautifulsoup4 \
-   numpy \
-   matplotlib \
-   seaborn \
-   pydot \
-   jupyterlab
+RUN pip3 -q install beautifulsoup4
+RUN pip3 -q install numpy 
+RUN pip3 -q install  matplotlib
+RUN pip3 -q install  seaborn 
+RUN pip3 -q install  pydot
+RUN pip3 -q install jupyterlab
 
 
 RUN mkdir src
